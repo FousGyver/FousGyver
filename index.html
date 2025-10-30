@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBI-Groupe | Electric Car Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="brand">
+          <span class="brand-icon">🌿</span>
+          <span class="brand-name">IBI-Groupe</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="link" href="#login">Log In</a>
+          <a class="button button--outline" href="#signup">Sign Up</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Sustainable rides for everyone</p>
+          <h1>Drive the Future of Bamako</h1>
+          <p class="subtitle">
+            Sustainable, reliable, and smart electric car booking at your
+            fingertips.
+          </p>
+          <a class="button" href="#book">Book a Ride Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--why" id="mission">
+        <div class="section-header">
+          <h2>Why Choose IBI-Groupe?</h2>
+          <p>
+            Experience the best way to travel around Bamako with our innovative
+            and eco-friendly platform.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🌱</div>
+            <h3>Eco-Friendly</h3>
+            <p>
+              Travel with zero emissions and contribute to a greener Bamako
+              using our fully electric fleet.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💰</div>
+            <h3>Affordable</h3>
+            <p>
+              Transparent, competitive pricing with no hidden fees. Pay only
+              for what you use.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📱</div>
+            <h3>Convenient</h3>
+            <p>
+              Book a car in seconds through our intuitive app from anywhere,
+              anytime.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--steps" id="how-it-works">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <p>Get on the road in three simple steps.</p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Register</h3>
+              <p>
+                Create your account in just a few simple steps to get started
+                with IBI-Groupe.
+              </p>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Book</h3>
+              <p>
+                Find a nearby car, check its availability, and reserve it
+                instantly through the app.
+              </p>
+            </div>
+          </article>
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <div>
+              <h3>Drive</h3>
+              <p>
+                Unlock your car with your phone, hop in, and enjoy your
+                eco-friendly ride.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <p>© 2024 IBI-Groupe. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">Fb</a>
+        <a href="#" aria-label="Twitter">Tw</a>
+        <a href="#" aria-label="Instagram">Ig</a>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      const navActions = document.querySelector('.nav-actions');
+
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          navToggle.classList.toggle('is-open');
+          navLinks.classList.toggle('is-open');
+          navActions.classList.toggle('is-open');
+        });
+      }
+    </script>
+  </body>
+</html>
